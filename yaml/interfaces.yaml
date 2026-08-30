@@ -1,0 +1,282 @@
+# Adressage des interfaces - OSPF Multi-Area Avancé
+# Les adresses sont reprises de la topologie GNS3.
+# Tous les liens point-à-point sont en /30.
+# Les loopbacks utilisent un masque /32.
+
+interfaces:
+
+  BR1:
+    - name: Loopback0
+      ip: 1.1.1.1
+      mask: 255.255.255.255
+    - name: Serial2/0
+      ip: 10.0.4.1
+      mask: 255.255.255.252
+    - name: Serial2/1
+      ip: 10.0.5.1
+      mask: 255.255.255.252
+    - name: Serial2/2
+      ip: 10.0.10.2
+      mask: 255.255.255.252
+    - name: Serial2/3
+      ip: 10.0.9.1
+      mask: 255.255.255.252
+
+  BR2:
+    - name: Loopback0
+      ip: 2.2.2.2
+      mask: 255.255.255.255
+    - name: Serial2/0
+      ip: 10.0.4.2
+      mask: 255.255.255.252
+    - name: Serial2/1
+      ip: 10.0.3.2
+      mask: 255.255.255.252
+    - name: Serial2/2
+      ip: 10.0.1.2
+      mask: 255.255.255.252
+    - name: Serial2/3
+      ip: 10.0.2.2
+      mask: 255.255.255.252
+
+  BR3:
+    - name: Loopback0
+      ip: 3.3.3.3
+      mask: 255.255.255.255
+    - name: Serial2/0
+      ip: 10.0.3.1
+      mask: 255.255.255.252
+    - name: Serial2/1
+      ip: 10.0.6.1
+      mask: 255.255.255.252
+    - name: Serial2/2
+      ip: 10.0.11.2
+      mask: 255.255.255.252
+    - name: Serial2/3
+      ip: 10.0.12.1
+      mask: 255.255.255.252
+
+  BR4:
+    - name: Loopback0
+      ip: 4.4.4.4
+      mask: 255.255.255.255
+    - name: Serial2/0
+      ip: 10.0.5.2
+      mask: 255.255.255.252
+    - name: Serial2/1
+      ip: 10.0.6.2
+      mask: 255.255.255.252
+    - name: Serial2/2
+      ip: 10.0.7.1
+      mask: 255.255.255.252
+    - name: Serial2/3
+      ip: 10.0.8.1
+      mask: 255.255.255.252
+
+  ABR1:
+    - name: Loopback0
+      ip: 8.8.8.8
+      mask: 255.255.255.255
+    - name: Serial2/0
+      ip: 10.0.9.2
+      mask: 255.255.255.252
+    - name: Serial2/1
+      ip: 10.0.7.2
+      mask: 255.255.255.252
+    - name: Serial2/2
+      ip: 10.0.20.1
+      mask: 255.255.255.252
+
+  ABR2:
+    - name: Loopback0
+      ip: 5.5.5.5
+      mask: 255.255.255.255
+    - name: Serial2/0
+      ip: 10.0.1.1
+      mask: 255.255.255.252
+    - name: Serial2/1
+      ip: 10.0.10.1
+      mask: 255.255.255.252
+    - name: Serial2/2
+      ip: 10.0.13.1
+      mask: 255.255.255.252
+    - name: Serial2/3
+      ip: 10.0.16.1
+      mask: 255.255.255.252
+
+  ABR3:
+    - name: Loopback0
+      ip: 7.7.7.7
+      mask: 255.255.255.255
+    - name: Serial2/0
+      ip: 10.0.8.2
+      mask: 255.255.255.252
+    - name: Serial2/1
+      ip: 10.0.12.2
+      mask: 255.255.255.252
+    - name: Serial2/2
+      ip: 10.0.28.1
+      mask: 255.255.255.252
+    - name: Serial2/3
+      ip: 10.0.13.2
+      mask: 255.255.255.252
+
+  ABR4:
+    - name: Loopback0
+      ip: 6.6.6.6
+      mask: 255.255.255.255
+    - name: Serial2/0
+      ip: 10.0.2.1
+      mask: 255.255.255.252
+    - name: Serial2/1
+      ip: 10.0.11.1
+      mask: 255.255.255.252
+    - name: Serial2/2
+      ip: 10.0.21.1
+      mask: 255.255.255.252
+    - name: Serial2/3
+      ip: 10.0.22.1
+      mask: 255.255.255.252
+
+  IR1:
+    - name: Loopback0
+      ip: 9.9.9.9
+      mask: 255.255.255.255
+    - name: Serial2/0
+      ip: 10.0.13.2
+      mask: 255.255.255.252
+    - name: Serial2/1
+      ip: 10.0.14.1
+      mask: 255.255.255.252
+
+  IR2:
+    - name: Loopback0
+      ip: 10.10.10.10
+      mask: 255.255.255.255
+    - name: Serial2/0
+      ip: 10.0.14.2
+      mask: 255.255.255.252
+    - name: Serial2/1
+      ip: 10.0.15.2
+      mask: 255.255.255.252
+
+  IR3:
+    - name: Loopback0
+      ip: 11.11.11.11
+      mask: 255.255.255.255
+    - name: Serial2/0
+      ip: 10.0.15.1
+      mask: 255.255.255.252
+    - name: Serial2/1
+      ip: 10.0.16.2
+      mask: 255.255.255.252
+
+  TSR1:
+    - name: Loopback0
+      ip: 12.12.12.12
+      mask: 255.255.255.255
+    - name: Serial2/0
+      ip: 10.0.17.2
+      mask: 255.255.255.252
+
+  TSR2:
+    - name: Loopback0
+      ip: 13.13.13.13
+      mask: 255.255.255.255
+    - name: Serial2/0
+      ip: 10.0.18.2
+      mask: 255.255.255.252
+
+  TSR3:
+    - name: Loopback0
+      ip: 15.15.15.15
+      mask: 255.255.255.255
+    - name: Serial2/0
+      ip: 10.0.19.2
+      mask: 255.255.255.252
+
+  TSR4:
+    - name: Loopback0
+      ip: 14.14.14.14
+      mask: 255.255.255.255
+    - name: Serial2/0
+      ip: 10.0.20.2
+      mask: 255.255.255.252
+    - name: Serial2/1
+      ip: 10.0.17.1
+      mask: 255.255.255.252
+    - name: Serial2/2
+      ip: 10.0.18.1
+      mask: 255.255.255.252
+    - name: Serial2/3
+      ip: 10.0.19.1
+      mask: 255.255.255.252
+
+  ASBR1:
+    - name: Loopback0
+      ip: 19.19.19.19
+      mask: 255.255.255.255
+    - name: Serial2/0
+      ip: 10.0.21.2
+      mask: 255.255.255.252
+    - name: Serial2/1
+      ip: 10.0.23.2
+      mask: 255.255.255.252
+
+  ASBR2:
+    - name: Loopback0
+      ip: 21.21.21.21
+      mask: 255.255.255.255
+    - name: Serial2/0
+      ip: 10.0.23.1
+      mask: 255.255.255.252
+    - name: Serial2/1
+      ip: 10.0.24.1
+      mask: 255.255.255.252
+
+  ASBR3:
+    - name: Loopback0
+      ip: 20.20.20.20
+      mask: 255.255.255.255
+    - name: Serial2/0
+      ip: 10.0.22.2
+      mask: 255.255.255.252
+    - name: Serial2/1
+      ip: 10.0.24.2
+      mask: 255.255.255.252
+
+  SR1:
+    - name: Loopback0
+      ip: 18.18.18.18
+      mask: 255.255.255.255
+    - name: Serial2/0
+      ip: 10.0.28.2
+      mask: 255.255.255.252
+    - name: Serial2/1
+      ip: 10.0.25.2
+      mask: 255.255.255.252
+    - name: Serial2/2
+      ip: 10.0.26.2
+      mask: 255.255.255.252
+
+  SR2:
+    - name: Loopback0
+      ip: 16.16.16.16
+      mask: 255.255.255.255
+    - name: Serial2/0
+      ip: 10.0.25.1
+      mask: 255.255.255.252
+    - name: Serial2/1
+      ip: 10.0.27.1
+      mask: 255.255.255.252
+
+  SR3:
+    - name: Loopback0
+      ip: 17.17.17.17
+      mask: 255.255.255.255
+    - name: Serial2/0
+      ip: 10.0.26.1
+      mask: 255.255.255.252
+    - name: Serial2/1
+      ip: 10.0.27.2
+      mask: 255.255.255.252

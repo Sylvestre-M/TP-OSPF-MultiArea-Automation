@@ -1,0 +1,75 @@
+# ==============================
+# Python
+# ==============================
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+.venv/
+venv/
+env/
+ENV/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# ==============================
+# IDE
+# ==============================
+
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# ==============================
+# Secrets / credentials
+# ==============================
+
+.env
+.env.*
+!.env.example
+
+# ==============================
+# Logs
+# ==============================
+
+logs/*
+!logs/.gitkeep
+*.log
+
+# ==============================
+# Generated output
+# ==============================
+
+output/*
+!output/.gitkeep
+
+# ==============================
+# OS files
+# ==============================
+
+.DS_Store
+Thumbs.db
+
+# ==============================
+# Temporary files
+# ==============================
+
+*.tmp
+*.temp
+*.bak
+*.backup
+
+# ==============================
+# GNS3 temporary / generated files
+# ==============================
+
+*.autosave
+*.gns3~

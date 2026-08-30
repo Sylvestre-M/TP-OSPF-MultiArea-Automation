@@ -1,0 +1,106 @@
+devices:
+
+  BR1:
+    host: 127.0.0.1
+    port: 5000
+    device_type: cisco_ios_telnet
+
+  BR2:
+    host: 127.0.0.1
+    port: 5001
+    device_type: cisco_ios_telnet
+
+  BR3:
+    host: 127.0.0.1
+    port: 5002
+    device_type: cisco_ios_telnet
+
+  BR4:
+    host: 127.0.0.1
+    port: 5003
+    device_type: cisco_ios_telnet
+
+  ABR4:
+    host: 127.0.0.1
+    port: 5004
+    device_type: cisco_ios_telnet
+
+  ABR2:
+    host: 127.0.0.1
+    port: 5005
+    device_type: cisco_ios_telnet
+
+  ABR1:
+    host: 127.0.0.1
+    port: 5006
+    device_type: cisco_ios_telnet
+
+  ABR3:
+    host: 127.0.0.1
+    port: 5007
+    device_type: cisco_ios_telnet
+
+  IR1:
+    host: 127.0.0.1
+    port: 5008
+    device_type: cisco_ios_telnet
+
+  IR2:
+    host: 127.0.0.1
+    port: 5009
+    device_type: cisco_ios_telnet
+
+  IR3:
+    host: 127.0.0.1
+    port: 5010
+    device_type: cisco_ios_telnet
+
+  TSR4:
+    host: 127.0.0.1
+    port: 5011
+    device_type: cisco_ios_telnet
+
+  TSR1:
+    host: 127.0.0.1
+    port: 5012
+    device_type: cisco_ios_telnet
+
+  TSR3:
+    host: 127.0.0.1
+    port: 5013
+    device_type: cisco_ios_telnet
+
+  TSR2:
+    host: 127.0.0.1
+    port: 5014
+    device_type: cisco_ios_telnet
+
+  ASBR1:
+    host: 127.0.0.1
+    port: 5015
+    device_type: cisco_ios_telnet
+
+  ASBR3:
+    host: 127.0.0.1
+    port: 5016
+    device_type: cisco_ios_telnet
+
+  ASBR2:
+    host: 127.0.0.1
+    port: 5017
+    device_type: cisco_ios_telnet
+
+  SR1:
+    host: 127.0.0.1
+    port: 5018
+    device_type: cisco_ios_telnet
+
+  SR2:
+    host: 127.0.0.1
+    port: 5019
+    device_type: cisco_ios_telnet
+
+  SR3:
+    host: 127.0.0.1
+    port: 5020
+    device_type: cisco_ios_telnet
